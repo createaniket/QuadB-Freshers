@@ -1,8 +1,8 @@
 const path = require('path')
 const express = require('express')
-const Readroute = require('./readdd')
+const Readroute = require('./read')
 const app = express()
-const port = 3000
+const port = process.env.port || 3000
 const rootsrc = path.join(__dirname, './resources')
 app.use(express.static(rootsrc))
 const viewspath = path.join(__dirname, './Templates/views')
