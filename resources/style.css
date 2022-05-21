@@ -1,0 +1,68 @@
+.main{
+margin: 4px;
+padding: 4px;
+width: 100vw;
+    background-color: rgb(17, 16, 63);
+}
+th{
+
+ background-color:grey;
+ color: aliceblue;
+ padding: 3vh;
+}
+.content{
+
+    display: flex;
+    justify-content: center;
+}
+.dropdown{
+
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+
+display: flex;
+/* justify-content: space-around; */
+justify-content: center;
+padding: 2vh;
+/* margin: 2vh; */
+}
+.dropdowninr{
+
+    padding: 2vh;
+}
+.dropdownbtc{
+
+    padding: 2vh;
+}
+
+.heading{
+
+    display: flex;
+}
+.heading p{
+
+    transform: translate(0 , 2vh);
+}
+.heading h1{
+
+    color: aquamarine;
+}
+.sub{
+
+    display: flex;
+}
+.sub p1{
+
+font-size: 130%;
+color: grey;
+}
+.sub p3{
+
+  color: aquamarine;
+    font-size: 130%;
+}
+
+

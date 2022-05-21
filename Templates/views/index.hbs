@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+<div class="main">
+
+
+    <div class="header">
+
+      <div class="heading">
+        <h1>HODLINFO</h1>
+        <p>.com</p>
+      </div>
+
+      <div class="sub">
+        <p1>Powered By </p1>
+        <p3>  Finstreet</p3>
+
+      </div>
+
+      <div class="button">
+        <div class="dropdownbtc">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            btc
+          </button>
+
+        </div>
+        <div class="dropdowninr">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            inr
+          </button>
+
+       
+
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      {{! <div class="table">
+
+          <h6>#</h6>
+          <h6>Name</h6>
+          <h6>Last</h6>
+          <h6>Buy</h6>
+          <h6>Sell</h6>
+          <h6>volume</h6>
+          <h6>base_unit</h6>
+
+
+
+   </div> }}
+
+      <table>
+        <tr>
+          <th><h2>#</h2></th>
+          <th><h2>Name</h2></th>
+          <th><h2>Last</h2></th>
+          <th><h2>Buy</h2></th>
+          <th><h2>SellPrice</h2></th>
+          <th><h2>volume</h2></th>
+          <th><h2>base_unit</h2></th>
+
+        </tr>
+        {{#if result}}
+          {{#each result}}
+            <tr>
+              <th>{{this.index}}</th>
+              <th>{{this.name}}</th>
+              <th>{{this.last}}</th>
+              <th>{{this.buy}}</th>
+              <th>{{this.sell}}</th>
+              <th>{{this.volume}}</th>
+              <th>{{this.base_unit}}</th>
+            </tr>
+          {{/each}}
+        {{/if}}
+      </table>
+    </div>
+
+    
+    </div>{{! <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> }}
+  </body>
+</html>
